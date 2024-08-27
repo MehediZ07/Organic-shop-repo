@@ -44,69 +44,82 @@
 <body class="Poppins bg-black">
     <header class="w-full  bg-[#F1F5F9]">
         <div class=" bg-white">
-
-
             <nav class="container mx-auto">
-                <div class="navbar space-x-6 md:mx-12">
-                    <div class="navbar-start ">
 
-                        <a class="btn  text-xl bg-transparent border-0"><img class="w-20 h-auto " src="images/logo.svg"
+                <div class="navbar flex justify-between">
+                    <div class=" ml-4 md:ml-0">
+                        <a class="text-xl bg-transparent border-0"><img class="w-20 h-auto " src="images/logo.svg"
                                 alt=""></a>
                     </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1 space-x-6">
+
+                    <div class="navbar-center hidden lg:flex ">
+                        <ul class="menu menu-horizontal space-x-12 px-1 ">
                             <a href="">
-                                <li>Home</li>
+                                Home
                             </a>
                             <a href="">
-                                <li>Everything</li>
+                                Everything
                             </a>
                             <a href="">
-                                <li>Groceries</li>
+                                Groceries
                             </a>
                             <a href="">
-                                <li>About</li>
+                                About
                             </a>
                             <a href="">
-                                <li>Contact</li>
+                                Contact
                             </a>
                         </ul>
                     </div>
-                    <div class="navbar-end space-x-6">
+                    <div class=" space-x-4  md:flex">
+
                         <a href="" class="text-green-500">$10.00<i class="fa-solid fa-cart-shopping pl-2"></i></a>
                         <a href=""><i class="fa-solid fa-user"></i></a>
-                    </div>
-                    <div class="dropdown dropdown-end ">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-green-500 h-10 ">
-                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <!-- Dropdown menu for mid device  -->
+                        <div class="dropdown dropdown-end md:hidden ">
+                            <div tabindex="0" role="button"
+                                class="btn btn-ghost btn-circle  bg-green-500 h-10 rounded-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="inline-block h-5 w-5 stroke-current">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 pri-txt-clr rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <a href="">
+                                    Home
+                                </a>
+                                <a href="">
+                                    Everything
+                                </a>
+                                <a href="">
+                                    Groceries
+                                </a>
+                                <a href="">
+                                    About
+                                </a>
+                                <a href="">
+                                    Contact
+                                </a>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content  text-black rounded-box z-[1] mt-3 w-24 p-2 shadow space-y-2">
-                            <a href="">
-                                <li>Home</li>
-                            </a>
-                            <a href="">
-                                <li>Everything</li>
-                            </a>
-                            <a href="">
-                                <li>Groceries</li>
-                            </a>
-                            <a href="">
-                                <li>About</li>
-                            </a>
-                            <a href="">
-                                <li>Contact</li>
-                            </a>
-                        </ul>
                     </div>
+
+
+
+
                 </div>
+
+
             </nav>
         </div>
         <!-- banner  -->
         <div class="hero container mx-auto my-24 bg-leaf bg-no-repeat bg-right-bottom bg-opacity-10 bg-contain">
-            <div class="flex flex-col lg:flex-row px-10 gap-24  mx-24">
-                <img src="images/bannerbg.png" class=" rounded-lg " />
-                <div class="space-y-6 justify-center flex flex-col pb-12 lg:pb-0 ">
+            <div class="flex flex-col lg:flex-row px-10 gap-24  lg:mx-24 ">
+                <img src="images/bannerbg.png" class=" rounded-lg lg:max-w-[50%]" />
+                <div class="space-y-6 justify-center flex flex-col pb-12 lg:pb-0 md:max-w-1/2">
                     <p class="font-bold text-2xl">Best Quality Product</p>
                     <h1 class="lg:text-7xl text-4xl  font-bold">Join the organic <br> movement!</h1>
                     <p class="py-6">
@@ -178,7 +191,7 @@
             </div>
         </div>
         <div class="bg-call_to_action bg-cover bg-center">
-            <div class=" container mx-auto text-center py-12 text-white">
+            <div class=" container mx-auto text-center py-12 text-white px-4">
 
                 <h1 class="lg:text-7xl text-4xl  font-bold">Join the organic <br> movement!</h1>
                 <p class="py-6 max-w-2xl mx-auto">
